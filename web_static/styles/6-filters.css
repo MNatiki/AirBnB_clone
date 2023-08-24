@@ -4,6 +4,8 @@
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
+    text-align: left;
+    display: inline-block;
 }
 
 .locations {
@@ -19,6 +21,7 @@
     width: 25%;
     display: inline-block;
     margin-left: 40px;
+    position: absolute;
 }
 
 h3 {
@@ -31,19 +34,44 @@ h4 {
     font-size: 14px;
     margin-top: -12px;
 }
+
+ul, li {
+    list-style-type: none;
+    margin: 10px auto;
+    line-height: 10px;
+}
+
 button {
     font-size: 18px;
     background-color: #ff5a5f;
     color: #FFFFFF;
     height: 48px;
-    border: 0;
     width: 20%;
     border-radius: 4px;
     margin: 10px auto;
     float: right;
-    margin-right: 20px;    
+    margin-right: 20px;
+    position: relative;    
 }
 
 button:hover {
     opacity: 0.9;
+}
+
+.popover {
+    display: none;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    margin-left: -41px;
+    position: relative;
+}
+
+div.locations:hover ul.popover {
+    display: block;
+}
+
+div.amenities:hover ul.popover {
+    display: block;
 }
